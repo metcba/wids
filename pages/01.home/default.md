@@ -11,7 +11,7 @@ process:
 <div class="col-md-2"></div>
 <div class="col-md-8 align-self-center lp-principal-quote"><p>
 Somos una comunidad de mujeres que trabajan y estudian en áreas de computación, automatización, ciencia de datos y tecnología
-en general. Centramos nuestro trabajo en la Provincia de Córdoba, buscamos colaborar con otros grupos, reforzar la comunidad Argentina y ser parte de las redes regionales y
+en general. Centramos nuestro trabajo en la provincia de Córdoba, buscamos colaborar con otros grupos, reforzar la comunidad Argentina y ser parte de las redes regionales y
 globales con objetivos y visiones similares.
 </p>
 </div>
