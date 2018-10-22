@@ -1,0 +1,63 @@
+/*---------general appearance-------------*/
+
+.navbar li a {
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  line-height: 64px;
+}
+
+h2 {
+  padding: 4px 0px;
+}
+
+.container {
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+.container p {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+
+
+/*---------navbar-------------*/
+
+.dropmenu ul li a.active {
+  color: #ffc95d !important;
+}
+.dropmenu ul li a:hover {
+  color: #ffc95d !important;
+}
+
+/* Delete the shadow brought by material bootstrap */
+.navbar {
+  box-shadow: none;
+}
+
+/* Hero (big background with picture) */
+
+/*#modular-hero {
+  background-position-y: center !important;
+}*/
+
+.header-dark.header-transparent #header:not(.scrolled) { background: rgba(0, 0, 0, 0.30); }
+
+.header-dark #header:not(.scrolled) a.active {
+  color:#fd5e60 !important;   /* Red */
+}
+
+
+.hero-p {
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  color: #fff;
+}
