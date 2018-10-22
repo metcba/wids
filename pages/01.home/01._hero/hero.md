@@ -2,7 +2,7 @@
 title: 'Nosotras'
 menu: Nosotras
 hero_classes: parallax text-light
-hero_image: background.jpg
+hero_image: working_table-3.jpg
 ---
 
 # **Mujeres en Tecnología**
