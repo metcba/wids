@@ -1,26 +1,22 @@
 ---
 title: eventos
-media_order: 'invitacion.png,Flyer_met_encuentro_II8-01.png,flyer-pydata-01.png'
+media_order: 'invitacion.png,Flyer_met_encuentro_II8-01.png,flyer-pydata-01.png,encuentro_cvs_big_lq.png'
 ---
 
-# - Encuentro MeT en PyData -
+# - ¿Cómo mostrar tu talento? ¿Qué buscan las empresas tech? -
 
-[![](flyer-pydata-01.png)](https://goo.gl/forms/HeqaYbxd6U4ReWAl1)
+LinkedIn, curriculums, entrevistas: salir al mundo empresarial y conseguir el trabajo perfecto para vos no es siempre fácil. Te están buscando, sólo tenés que lograr que te encuentren!
+Te invitamos a un panel y sesión práctica sobre cómo mostrar tu talento a empresas tech para conseguir tu primer trabajo. Invitamos a profesionales de empresas referentes de tecnología en Córdoba para que nos cuenten qué están buscando, por qué canales y cuáles son las mejores estrategias para comunicarles tu valor. Desde Mujeres en Tecnología, le sumamos una perspectiva distinta para charlar sobre cómo son percibidas las minorías y cómo nos afectan los sesgos inconscientes en los procesos de selección y los equipos de trabajo.
+Finalizamos con un workshop con mentores y recruiters para que te saques todas las dudas y puedas recibir comentarios personalizados. Trae tu CV o notebook con linkedIn, y potencialos para reflejar todo tu valor!
 
-Tuvimos nuestros [Primer](https://twitter.com/met_CBA/status/1022867604837486598) y Segundo Encuentro MeT, donde nos presentamos, contamos nuestra visión, nuestros principios y ejes de trabajo. Propusimos a la nueva comunidad idear, de forma participativa, estrategias para avanzar en cada uno de los ejes. Trabajamos en equipos y construimos ideas geniales e innovadoras.
-
-El próximo **domingo 30 de septiembre**  les proponemos asistir juntas a la charla de la data scientist y lider de TopTal en Latinoamerica [Eva Bojorges](https://www.linkedin.com/in/eva-bojorges/): **Building an Empire: how to use data and game theory to make strategic decisions**. La charla se realiza en el marco de [PyData Córdoba](https://pydata.org/cordoba2018).
-
-Luego, las invitamos a debatir en el Almuerzo de Mujeres en Tecnología Córdoba sobre **cómo lograr eventos de tecnología más inclusivos**. Como siempre, nuestro espíritu es de generación de cambio, formación de vínculos que nos ayuden a crecer, y visibilización historias de mujeres y grupos sub-representados en tecnología para inspirar y tranformar nuestro entorno.
+[![](encuentro_cvs_big_lq.png)](http://meetu.ps/e/FZjfK/tvrc3/f)
 
 <div class="col-md-12 lp-main-message">
-¡Agradecemos a PyData por proveernos las entradas a la charla de Eva! Nuestro cupos son limitados, inscribite en  <a href="https://goo.gl/forms/HeqaYbxd6U4ReWAl1">este link</a>
+¡Agradecemos a Santex, IncluiIT y Women Techmakers por hacer este evento posbile! Inscribite en <a href="http://meetu.ps/e/FZjfK/tvrc3/f">nuestro MeetUp</a>.
 </div>
-
-La comunidad está abierta a cualquier persona e institución que se identifique con nuestro propósito y busque un espacio para construir, colaborar y transformar. Hay mucho por hacer y esperamos que más mujeres y hombres se sumen para idear juntos caminos hacia una tecnología más inclusiva.
 
 ## Agenda
 
-Domingo 30 de Septiembre de 2018 - 11 hs
+Jueves 8 de Noviembre, 18hs
 
-Auditorio, Módulo Baterías D en Ciudad Universitaria [https://goo.gl/maps/Crfu6mYsLEL2](https://goo.gl/maps/Crfu6mYsLEL2).
+The Tech Pub, Av. Vélez Sarsfield 576 [https://goo.gl/maps/QSpZKGcSFe82](https://goo.gl/maps/QSpZKGcSFe82).
