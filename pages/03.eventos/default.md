@@ -12,16 +12,13 @@ Te invitamos a un panel y sesión práctica sobre cómo mostrar tu talento a emp
 Desde Mujeres en Tecnología, le sumamos una perspectiva distinta para charlar sobre cómo son percibidas las minorías y cómo nos afectan los sesgos inconscientes en los procesos de selección y los equipos de trabajo.
 Finalizamos con un workshop con mentores y recruiters para que te saques todas las dudas y puedas recibir comentarios personalizados. Trae tu CV o notebook con linkedIn, y potencialos para reflejar todo tu valor!
 
-[![](encuentro_cvs_big_lq.png)](http://meetu.ps/e/FZjfK/tvrc3/f)
-
 <div class="col-md-12 lp-main-message">
+<a href="http://meetu.ps/e/FZjfK/tvrc3/f"><img alt="" src="/user/pages/03.eventos/encuentro_cvs_big_lq.png"></a>
 ¡Agradecemos a Santex, IncluiIT y Women Techmakers por hacer este evento posbile! Inscribite en <a href="http://meetu.ps/e/FZjfK/tvrc3/f">nuestro MeetUp</a>.
 </div>
 
 ## Agenda
 
-<div>
-<i class="far fa-clock"></i><p>Jueves 8 de Noviembre, 18hs</p>
-</div>
+Jueves 8 de Noviembre, 18hs
 
 The Tech Pub, Av. Vélez Sarsfield 576 [https://goo.gl/maps/QSpZKGcSFe82](https://goo.gl/maps/QSpZKGcSFe82).
