@@ -20,6 +20,8 @@ Finalizamos con un workshop con mentores y recruiters para que te saques todas l
 
 ## Agenda
 
-Jueves 8 de Noviembre, 18hs
+<div>
+<i class="far fa-clock"></i><p>Jueves 8 de Noviembre, 18hs</p>
+</div>
 
 The Tech Pub, Av. Vélez Sarsfield 576 [https://goo.gl/maps/QSpZKGcSFe82](https://goo.gl/maps/QSpZKGcSFe82).
