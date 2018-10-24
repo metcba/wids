@@ -13,11 +13,13 @@ Desde Mujeres en Tecnología, le sumamos una perspectiva distinta para charlar s
 Finalizamos con un workshop con mentores y recruiters para que te saques todas las dudas y puedas recibir comentarios personalizados. Trae tu CV o notebook con linkedIn, y potencialos para reflejar todo tu valor!
 
 <div class="col-md-12 lp-main-message">
-<a href="http://meetu.ps/e/FZjfK/tvrc3/f"><img alt="" src="/user/pages/03.eventos/encuentro_cvs_big_lq.png">
-</a></div>
-<div class="col-md-12 lp-main-message">
 ¡Agradecemos a Santex, IncluiIT y Women Techmakers por hacer este evento posbile! Inscribite en <a href="http://meetu.ps/e/FZjfK/tvrc3/f">nuestro MeetUp</a>.
 </div>
+
+<div class="col-md-12 lp-main-message">
+<a href="http://meetu.ps/e/FZjfK/tvrc3/f"><img alt="" src="/user/pages/03.eventos/encuentro_cvs_big_lq.png">
+</a></div>
+
 
 ## Agenda
 
