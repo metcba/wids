@@ -20,5 +20,3 @@ projects:
 ---
 
 ## Nuestros ejes
-
-aaaaaaa

@@ -26,7 +26,22 @@ h2 {
   margin-bottom: 24px;
 }
 
-
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem !important;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 1.2em !important;
+  }
+  .title-h1h2 h1 + h2 {
+    margin-top: -10px;
+  }
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 
 /*---------navbar-------------*/
 
@@ -44,10 +59,6 @@ h2 {
 
 /* Hero (big background with picture) */
 
-/*#modular-hero {
-  background-position-y: center !important;
-}*/
-
 .header-dark.header-transparent #header:not(.scrolled) { background: rgba(0, 0, 0, 0.30); }
 
 .header-dark #header:not(.scrolled) a.active {
@@ -62,10 +73,47 @@ h2 {
   color: #fff;
 }
 
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem !important;
+    line-height: 40px;
+  }
+  .hero h2 {
+    font-size: 1.8rem !important;
+  }
+  .hero h1 strong {
+    font-weight: 700 !important;
+  }
+  .hero h1 + h2 {
+    margin-top: 10px !important;
+  }
+}
+
+.mobile-menu .button_container span {
+  background: #ff5d5d;
+}
+
+/*----------Principles-------------*/
+
+#modular-features.small .column:hover .feature-icon i { color: #ffc95d; }
+
+#modular-features .column:hover .feature-icon { color: #53e5e5; }
+
+#modular-features .column:hover .feature-icon h6 { color: #ffc95d; }
+
+#modular-features .column:hover .feature-content { color: #667189; }
+
 /*----------Plain----------------*/
 
 .section.modular-plain {
   padding-bottom: 40px;
+}
+
+@media (max-width: 600px) {
+  .modular-plain .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 /*----------Projects--------------*/
@@ -106,8 +154,51 @@ h2 {
   flex-grow: 1;
 }
 
+/*----------------- Team ------------*/
 
-/*----------------- footer ------------*/
+#modular-team {
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+
+.team-photo {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 1em auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-border-radius: 99em;
+  -moz-border-radius: 99em;
+  border-radius: 99em;
+  border: 1px solid #eee;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.team-description {
+  font-size: 12px;
+}
+
+.btn-sumate {
+  margin-top: 40px;
+  background: #ffc95d;
+  border-color: #ffc95d;
+  color: white;
+}
+
+.btn-sumate:hover {
+  background: rgba(255, 201, 93, 0.7);
+  border-color: #ffc95d;
+  color: white;
+}
+
+.btn-sumate:visited {
+  background: rgba(255, 201, 93, 0.7);
+  border-color: #ffc95d;
+  color: white;
+}
+/*----------------- Footer ------------*/
 
 .footer {
   background: #222222;
