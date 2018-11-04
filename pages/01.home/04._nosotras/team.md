@@ -13,6 +13,8 @@ people:
     - name: "Soledad Palacios"
       description: "Desarrolladora, docente de educación media y mujer multifunción"
       photo: solep2.jpg
+showbutton: true
+class: team-gray
 ---
 
 ## Nuestro equipo

@@ -1,6 +1,6 @@
 ---
-title: Home
-menu: Home
+title: Nosotras
+menu: Nosotras
 onpage_menu: false
 body_classes: title-h1h2 header-dark header-transparent
 

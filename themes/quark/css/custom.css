@@ -160,6 +160,9 @@ h2 {
 #modular-team {
   padding-top: 2em;
   padding-bottom: 3em;
+}
+
+#modular-team .team-gray {
   background-color: #eeeeee;
 }
 

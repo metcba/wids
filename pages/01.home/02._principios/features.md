@@ -1,5 +1,5 @@
 ---
-title: Homepage Nosotras
+title: Principios
 class: offset-box
 features:
     - header: Inclusivas
