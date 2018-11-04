@@ -59,12 +59,13 @@ h2 {
 
 /* Hero (big background with picture) */
 
-.header-dark.header-transparent #header:not(.scrolled) { background: rgba(0, 0, 0, 0.30); }
+.header-dark.header-transparent #header:not(.scrolled) {
+  background: rgba(0, 0, 0, 0.30);
+}
 
 .header-dark #header:not(.scrolled) a.active {
   color:#fd5e60 !important;   /* Red */
 }
-
 
 .hero-p {
   text-transform: uppercase;
@@ -159,6 +160,7 @@ h2 {
 #modular-team {
   padding-top: 2em;
   padding-bottom: 3em;
+  background-color: #eeeeee;
 }
 
 .team-photo {
@@ -198,6 +200,30 @@ h2 {
   border-color: #ffc95d;
   color: white;
 }
+
+/*----------------- Allies --------------*/
+
+.allies {
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-align: center;
+       -ms-flex-align: center;
+          align-items: center;
+    -webkit-box-pack: center;
+       -ms-flex-pack: center;
+     justify-content: center;
+}
+
+.ally img {
+   max-height: 200px;
+}
+
+.ally {
+  height: 100%;
+}
+
 /*----------------- Footer ------------*/
 
 .footer {
