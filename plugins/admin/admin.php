@@ -317,16 +317,6 @@ class AdminPlugin extends Plugin
      */
     public function onPagesInitialized()
     {
-        $config = $this->config;
-
-        // Force SSL with redirect if required
-        if ($config->get('system.force_ssl')) {
-            if (!isset($_SERVER['HTTPS']) || $_SERVER['HTTPS'] !== 'on') {
-                $url = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-                $this->grav->redirect($url);
-            }
-        }
-
         $this->session = $this->grav['session'];
 
         // Set original route for the home page.
@@ -360,10 +350,7 @@ class AdminPlugin extends Plugin
         }
 
         // Make local copy of POST.
-        $post = $this->grav['uri']->post();
-
-        // Initialize Page Types
-        Pages::types();
+        $post = !empty($_POST) ? $_POST : [];
 
         // Handle tasks.
         $this->admin->task = $task = !empty($post['task']) ? $post['task'] : $this->uri->param('task');
@@ -387,17 +374,7 @@ class AdminPlugin extends Plugin
             $page = new Page;
             $page->expires(0);
 
-            if ($this->grav['user']->authorize('admin.login')) {
-                $event = new Event(['page' => $page]);
-                $event = $this->grav->fireEvent('onAdminPage', $event);
-                $page = $event['page'];
-
-                if ($page->slug()) {
-                    return $page;
-                }
-            }
-
-            // Look in the pages provided by the Admin plugin itself
+            // First look in the pages provided by the Admin plugin itself
             if (file_exists(__DIR__ . "/pages/admin/{$self->template}.md")) {
                 $page->init(new \SplFileInfo(__DIR__ . "/pages/admin/{$self->template}.md"));
                 $page->slug(basename($self->template));

@@ -2,9 +2,10 @@
 namespace Grav\Plugin\Admin\Twig;
 
 use Grav\Common\Grav;
-use Grav\Common\Yaml;
 use Grav\Common\Language\Language;
 use Grav\Common\Page\Page;
+use Symfony\Component\Yaml\Yaml;
+use Symfony\Component\Yaml\Parser;
 
 class AdminTwigExtension extends \Twig_Extension
 {
@@ -31,7 +32,6 @@ class AdminTwigExtension extends \Twig_Extension
             new \Twig_SimpleFilter('toYaml', [$this, 'toYamlFilter']),
             new \Twig_SimpleFilter('fromYaml', [$this, 'fromYamlFilter']),
             new \Twig_SimpleFilter('adminNicetime', [$this, 'adminNicetimeFilter']),
-            new \Twig_SimpleFilter('nested', [$this, 'nestedFilter']),
         ];
     }
 
@@ -41,23 +41,6 @@ class AdminTwigExtension extends \Twig_Extension
             new \Twig_SimpleFunction('getPageUrl', [$this, 'getPageUrl'], ['needs_context' => true]),
             new \Twig_SimpleFunction('clone', [$this, 'cloneFunc']),
         ];
-    }
-
-    public function nestedFilter($current, $name)
-    {
-        $path = explode('.', trim($name, '.'));
-
-        foreach ($path as $field) {
-            if (is_object($current) && isset($current->{$field})) {
-                $current = $current->{$field};
-            } elseif (is_array($current) && isset($current[$field])) {
-                $current = $current[$field];
-            } else {
-                return null;
-            }
-        }
-
-        return $current;
     }
 
     public function cloneFunc($obj)
@@ -98,7 +81,7 @@ class AdminTwigExtension extends \Twig_Extension
         return $this->grav['admin']->translate($args, $lang);
     }
 
-    public function toYamlFilter($value, $inline = null)
+    public function toYamlFilter($value, $inline = true)
     {
         return Yaml::dump($value, $inline);
 
@@ -106,7 +89,8 @@ class AdminTwigExtension extends \Twig_Extension
 
     public function fromYamlFilter($value)
     {
-        return Yaml::parse($value);
+        $yaml = new Parser();
+        return $yaml->parse($value);
     }
 
     public function adminNicetimeFilter($date, $long_strings = true)

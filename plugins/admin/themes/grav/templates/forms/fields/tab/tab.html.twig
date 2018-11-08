@@ -1,13 +1,9 @@
 {% if field.fields %}
     <div class="form-tab">
-    {% for childName, child in field.fields %}
+    {% for field in field.fields %}
         {% if field.type %}
-            {%- if childName starts with '.' -%}
-                {% set child = child|merge({ name: field.name ~ childName }) %}
-            {% endif %}
-
-            {% set value = child.name ? data.value(child.name) : data.toArray %}
-            {% include ["forms/fields/#{child.type}/#{child.type}.html.twig", 'forms/fields/text/text.html.twig'] with { field: child, value: data.value(child.name) } %}
+            {% set value = field.name ? data.value(field.name) : data.toArray %}
+            {% include ["forms/fields/#{field.type}/#{field.type}.html.twig", 'forms/fields/text/text.html.twig'] %}
         {% endif %}
     {% endfor %}
     </div>

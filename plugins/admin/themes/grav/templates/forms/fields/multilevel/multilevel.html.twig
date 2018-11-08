@@ -1,8 +1,13 @@
 {% extends "forms/field.html.twig" %}
 
-{% macro renderer(key, content, field, scope, level, parent_key, up_level) %}
-    {% import _self as self %}
+{% block global_attributes %}
+    data-grav-array-name="{{ (scope ~ field.name)|fieldName }}"
+    data-grav-array-keyname="{{ field.placeholder_key|e|tu }}"
+    data-grav-array-valuename="{{ field.placeholder_value|e|tu }}"
+    {{ parent() }}
+{% endblock %}
 
+{% macro renderer(key, content, field, scope, level, parent_key, up_level) %}
     {% macro field(value, key, level, globalvars, disable_name, hidden) %}
         {% set name = 'data[' ~ globalvars.field.name|replace({'.': ']['}) ~ ']' ~ key %}
         <div class="form-row array-field-value_only js__multilevel-field {{ level == 0 ? 'top' : '' }}"
@@ -23,14 +28,14 @@
 
     {% if level == 0 %}
 
-        {{ self.field(key, '', level, _context, true, (is_numeric(key) ? true : false)) }}
+        {{ _self.field(key, '', level, _context, true, (is_numeric(key) ? true : false)) }}
 
         {% if content is not iterable %}
             {% set level2 = level + 1 %}
 
             <div class="children-wrapper">
                 <div class="element-wrapper">
-                    {{ self.field(content, '[' ~ key ~ ']', level2, _context) }}
+                    {{ _self.field(content, '[' ~ key ~ ']', level2, _context) }}
                 </div>
             </div>
         {% endif %}
@@ -46,9 +51,9 @@
             <div class="element-wrapper">
                 {% if not is_numeric(inner_key) %}
                     {% if (content|length > 1) %}
-                        {{ self.field(inner_key, parent_key, level, _context, true) }}
+                        {{ _self.field(inner_key, parent_key, level, _context, true) }}
                     {% else %}
-                        {{ self.field(inner_key, parent_key, level, _context) }}
+                        {{ _self.field(inner_key, parent_key, level, _context) }}
                     {% endif %}
                     {% set level2 = level + 1 %}
                     {% set up_level = true %}
@@ -65,7 +70,7 @@
                     {% endif %}
 
                     {% set last_key = (is_numeric(inner_key)) ? '' : inner_key %}
-                    {{ self.field(inner_content, parent_key ~ '[' ~ inner_key ~ ']', level2, _context) }}
+                    {{ _self.field(inner_content, parent_key ~ '[' ~ inner_key ~ ']', level2, _context) }}
 
                     {% if not is_numeric(inner_key) %}
                             </div>
@@ -74,28 +79,19 @@
                 {% else %}
 
                     {% set inner_parent_key = parent_key ~ '[' ~ inner_key ~ ']' %}
-                    {{ self.renderer(inner_key, inner_content, field, scope, level, inner_parent_key, up_level) }}
+                    {{ _self.renderer(inner_key, inner_content, field, scope, level, inner_parent_key, up_level) }}
                 {% endif %}
             </div>
         {% endfor %}
     </div>
 {% endmacro %}
 
-{% import _self as macro %}
-
-{% block global_attributes %}
-    data-grav-array-name="{{ (scope ~ field.name)|fieldName }}"
-    data-grav-array-keyname="{{ field.placeholder_key|e|tu }}"
-    data-grav-array-valuename="{{ field.placeholder_value|e|tu }}"
-    {{ parent() }}
-{% endblock %}
-
 {% block input %}
     <div data-id="{{random_string()}}" data-grav-multilevel-field data-grav-array-type="container" data-grav-array-mode="value_only"{{ value|length <= 1 ? ' class="one-child"' : '' }}>
         {% if value|length %}
             {% for key, content in value -%}
                 <div class="element-wrapper">
-                    {{ macro.renderer(key, content, field, scope, 0, '[' ~ key ~ ']', true) }}
+                    {{ _self.renderer(key, content, field, scope, 0, '[' ~ key ~ ']', true) }}
                 </div>
             {% endfor %}
         {%- else -%}

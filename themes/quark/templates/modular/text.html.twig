@@ -1,15 +1,15 @@
 {% set grid_size = theme_var('grid-size') %}
 {% set image = page.media.images|first %}
 
-<section class="section modular-text {{ page.header.class}} bg-gray">
+<section id="modular-text" class="section {{ page.header.class}} bg-gray">
     <section class="container {{ grid_size }}">
-        <div class="columns {{ page.header.image_align|default('align-right') }}">
+        <div class="columns">
             <div class="column col-6 col-md-12">
-                {{ content|raw }}
+                {{ content }}
             </div>
             <div class="column col-6 col-md-12">
                 {% if image %}
-                    {{ image.html|raw }}
+                    {{ image.html('','','align-'~page.header.image_align) }}
                 {% endif %}
             </div>
         </div>

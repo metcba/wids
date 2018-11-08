@@ -1,0 +1,71 @@
+/*---------general appearance-------------*/
+
+.tm_navbar .nav li a {
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  line-height: 64px;
+}
+
+h2 {
+  padding: 4px 0px;
+}
+
+.container {
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+.container p {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+/*---------landing page-------*/
+.container .lp-principal-quote {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.container .lp-main-message {
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  font-variant: all-petite-caps;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24pt;
+}
+
+.container .lp-color-section {
+}
+
+/*---------navbar-------------*/
+
+.tm_navbar .nav li a:hover, .tm_navbar .nav > li.active > a, .tm_navbar .nav > li.active > a:hover {
+  color: #ff5d5d;
+}
+.tm_navbar .nav > .active > a, .tm_navbar .nav > .active > a:hover, .tm_navbar .nav > .active > a:focus {
+	color: #ffc95d;
+	background: transparent;
+}
+.tm_navbar .nav > li.sfHover > a, .tm_navbar .nav > li.sfHover > a:hover, .tm_navbar .nav > li > a:hover, .tm_navbar .nav > li.active > a, .tm_navbar .nav > li.active > a:hover {
+	color: #ffc95d;
+}
+
+/* Delete the shadow brought by material bootstrap */
+.navbar {
+  box-shadow: none;
+}
+
+.row {
+  display: block;
+}
+
+.container li > p {
+  margin-bottom: 1rem;
+}

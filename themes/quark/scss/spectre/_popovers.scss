@@ -16,10 +16,11 @@
   }
 
   *:focus + .popover-container,
-  &:hover .popover-container {
+  &:hover .popover-container,
+  .popover-container:hover {
     display: block;
     opacity: 1;
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%) scale(1);
   }
 
   &.popover-right {
@@ -28,9 +29,10 @@
       top: 50%;
     }
 
-    *:focus + .popover-container,
-    &:hover .popover-container {
-      transform: translate(0, -50%);
+    :focus + .popover-container,
+    &:hover .popover-container,
+    .popover-container:hover {
+      transform: translate(0, -50%) scale(1);
     }
   }
 
@@ -40,9 +42,10 @@
       top: 100%;
     }
 
-    *:focus + .popover-container,
-    &:hover .popover-container {
-      transform: translate(-50%, 0);
+    :focus + .popover-container,
+    &:hover .popover-container,
+    .popover-container:hover {
+      transform: translate(-50%, 0) scale(1);
     }
   }
 
@@ -52,9 +55,10 @@
       top: 50%;
     }
 
-    *:focus + .popover-container,
-    &:hover .popover-container {
-      transform: translate(-100%, -50%);
+    :focus + .popover-container,
+    &:hover .popover-container,
+    .popover-container:hover {
+      transform: translate(-100%, -50%) scale(1);
     }
   }
 
