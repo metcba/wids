@@ -227,6 +227,18 @@ h2 {
   height: 100%;
 }
 
+/*----------------- Projects -----------*/
+
+#modular-text a {
+  color: #f96463 !important;
+}
+
+.text-highlight {
+  font-size: 20px;
+  color: #f96463 !important;
+  margin: 10px;
+}
+
 /*----------------- Footer ------------*/
 
 .footer {
