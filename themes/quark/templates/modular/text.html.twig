@@ -1,13 +1,13 @@
 {% set grid_size = theme_var('grid-size') %}
 
-<section id="modular-text" class="section {{ page.header.class}} bg-gray">
+<section id="modular-text" class="section {{ page.header.class}}">
   <section class="container {{ grid_size }}">
-    <div class="columns">
+    <div class="columns" id="{{ page.header.id }}">
       <div class="column col-12">
         <h2>{{ page.header.title }}</h2>
       </div>
       {% if page.header.image %}
-        <div class="column col-6 col-md-12">
+        <div class="column col-6 col-md-12 text-image">
           <img src="{{ page.media[page.header.image].url }}"/>
         </div>
         <div class="column col-6 col-md-12">
@@ -23,7 +23,7 @@
           {{ content }}
           {% if page.header.subscribeurl %}
             <div class="column col-12 text-center">
-              <a class="btn btn-lg btn-sumate">Inscribite!</a>
+              <a class="btn btn-lg btn-sumate" href="{{ page.header.subscribeurl }}">Inscribite!</a>
             </div>
           {% endif %}
         </div>

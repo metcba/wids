@@ -18,7 +18,7 @@ people:
       photo: mili2.jpg
       presentation: "Soy Lic. en Ciencias de la Computación, próxima a terminar mi doctorado y profesora en la UNC. Una de mis grandes pasiones es brindar oportunidades de crear impacto, y considero que la tecnología es una herramienta esencial de transformación. </br> La docencia me apasiona profundamente, y ha llegado a convertirse en el highlight de mi semana. Espero que mis alumnos opinen, al menos, parecido! </br> Desde lo profesional, mis áreas de investigación son el machine learning, la minería de datos educacionales y el procesamiento del lenguaje natural. Mujeres en Tecnología permite que mi trabajo tenga mucho más impacto, y puedo combinar un aspecto mucho más humano en mi día a día."
       link: "https://www.linkedin.com/in/milagro-teruel/"
-      linkname: "LinkedIn"
+      linkname: "Mi linkedIn (porque otra cosa no tengo)"
     - name: "Soledad Palacios"
       description: "+Info"
       photo: solep2.jpg
