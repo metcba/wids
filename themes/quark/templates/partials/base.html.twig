@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% include 'partials/metadata.html.twig' %}
 
-    <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png') }}" />
+    <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.ico') }}" />
     <link rel="canonical" href="{{ page.url(true, true) }}" />
 
     {% block stylesheets %}
@@ -41,7 +41,7 @@
             <section class="container {{ grid_size }}">
                 <nav class="navbar">
                     <section class="navbar-section logo">
-                        <a href="{{ home_url }}" class="navbar-brand mr-10">{% include('@images/grav-logo.svg') %}</a>
+                        <a href="{{ home_url }}" class="navbar-brand mr-10">{% include('@images/met_logo.svg') %}</a>
                     </section>
                     <section class="navbar-section">
 
@@ -86,18 +86,27 @@
     </div>
 
 {% block footer %}
-    <section id="footer" class="section bg-gray">
-        <section class="container {{ grid_size }}">
-            <p><a href="http://getgrav.org">Grav</a> was <i class="fa fa-code"></i> with <i class="fa fa-heart-o pulse "></i> by <a href="https://trilby.media">Trilby Media</a>.</p>
-        </section>
-    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="columns">
+                <div class="column col-lg-4 col-md-4 col-sm-6 col-xs-12 text-center social-icons">
+                    <span>Contact us</span>
+                    <a href="#"><i class="la la-envelope"></i></a>
+                    <a href="#"><i class="la la-twitter"></i></a>
+                </div>
+                <div class="column col-lg-4 col-md-4 col-sm-6 col-xs-12 col-ml-auto text-center">
+                    <img src="{{ url('theme://images/met_logo_no_line.png') }}"/>
+                </div>
+            </div>
+        </div>
+    </footer>
 {% endblock %}
 
-    
+
     <div class="mobile-container">
         <div class="overlay" id="overlay">
             <div class="mobile-logo">
-                {% include('@images/grav-logo.svg') %}
+                {% include('@images/met_logo.svg') %}
             </div>
             <nav class="overlay-menu">
                 {% include 'partials/navigation.html.twig' with {tree: true} %}
