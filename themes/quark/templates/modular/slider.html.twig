@@ -1,0 +1,20 @@
+<section id="modular-allies" class="section modular-plain">
+  <section class="container {{ grid_size }}">
+    {{ page.content }}
+    <div class="columns text-center">
+      {% for allyt in page.header.alliestop %}
+        <div class="column col-4 col-md-6 col-sm-6">
+          <img src="{{ page.media[allyt.logo].url }}" />
+        </div>
+      {% endfor %}
+    </div>
+    <div class="columns text-center allies">
+      {% for allym in page.header.alliesmiddle %}
+        <div class="column col-3 col-md-6 col-sm-6 ally">
+          <img src="{{ page.media[allym.logo].url }}" />
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+</section>
+

@@ -1,0 +1,53 @@
+{% set grid_size = theme_var('grid-size') %}
+{% set image = page.media.images|first %}
+
+<section id="modular-plain" class="section modular-plain {{ page.header.class}} bg-gray">
+  <section class="container {{ grid_size }}">
+    {{ content }}
+    {% for project in page.header.projects %}
+      <div class="columns project">
+        {% if ( project.align == "left" ) or ( isMobile() ) %}
+          <div class="column col-6 col-md-6 col-sm-12 project-image" {% if project.image %}style="background-image: url({{ page.media[project.image].url }});"{% endif %}>
+          </div>
+          <div class="column col-6 col-md-6 col-sm-12 project-description d-flex">
+            <div class="project-title">
+              {% if project.title %}
+                <h4>{{ project.title }}</h4>
+              {% endif %}
+            </div>
+            <div class="project-content">
+              {% if project.description %}
+                <p>{{ project.description }}</p>
+              {% endif %}
+            </div>
+            <div class="project-link">
+              {%if project.linkurl %}
+                <span><a href="{{ project.linkurl }}"><i class="la la-plus"></i> PROYECTOS</a></span>
+              {% endif %}
+            </div>
+          </div>
+        {% else %}
+          <div class="column col-6 col-md-6 col-sm-12 project-description d-flex">
+            <div class="project-title">
+              {% if project.title %}
+                <h4>{{ project.title }}</h4>
+              {% endif %}
+            </div>
+            <div class="project-content">
+              {% if project.description %}
+                <p>{{ project.description }}</p>
+              {% endif %}
+            </div>
+            <div class="project-link">
+              {%if project.linkurl %}
+                <span><a href="{{ project.linkurl }}"><i class="la la-plus"></i> PROYECTOS</a></span>
+              {% endif %}
+            </div>
+          </div>
+          <div class="column col-6 col-md-6 col-sm-12 project-image" {% if project.image %}style="background-image: url({{ page.media[project.image].url }});"{% endif %}>
+          </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </section>
+</section>

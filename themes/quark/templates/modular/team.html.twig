@@ -1,0 +1,48 @@
+<section id="modular-team" class="section {{ page.header.class}}">
+  <section class="container {{ grid_size }}">
+    <div class="columns">
+      <div class="column col-12 col-md-12" id="{{ page.header.anchor }}">
+        {{ content }}
+      </div>
+      {% for person in page.header.people %}
+        <div class="column col-3 col-md-6 col-sm-6 text-center">
+            <div class="team-photo" style="background-image:
+                   url({{ page.media[person.photo].url }})">
+            </div>
+            <div>
+              {{ person.name }}
+            </div>
+            <div class="team-description">
+              {% if person.presentation %}
+              <a href="#modal-{{ loop.index }}">{{ person.description }}</a>
+              <div class="modal" id="modal-{{ loop.index }}">
+                <a href="#{{ page.header.anchor }}" class="modal-overlay" aria-label="Close"></a>
+                <div class="modal-container">
+                  <div class="modal-header">
+                    <a href="#{{ page.header.anchor }}" class="btn btn-clear float-right" aria-label="Close"></a>
+                    <div class="modal-title h5">{{ person.name }}</div>
+                  </div>
+                  <div class="modal-body">
+                    <div class="content">
+                      {{ person.presentation }}
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="{{ person.link }}">{{ person.linkname }}</a>
+                  </div>
+                </div>
+              </div>
+              {% else %}
+                {{ person.description }}
+              {% endif %}
+            </div>
+        </div>
+      {% endfor %}
+    </div>
+    {% if page.header.showbutton == 'true' %}
+      <div class="column col-12 text-center">
+        <button class="btn btn-lg btn-sumate">Sumate al equipo</button>
+      </div>
+    {% endif %}
+  </section>
+</section>
