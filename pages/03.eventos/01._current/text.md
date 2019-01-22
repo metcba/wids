@@ -1,12 +1,10 @@
 ---
-title: 'Encuentro MeT en PyData'
+title: '¿Cómo mostrar tu talento? ¿Qué buscan las empresas tech?'
 media_order: 'invitacion.png,Flyer_met_encuentro_II8-01.png,flyer-pydata-01.png'
-image: flyer-pydata-01.png
-subscribeurl: 'https://twitter.com/met_CBA/status/1022867604837486598'
+image: cvs_mentores-hq-01.png
+subscribeurl: 'https://www.meetup.com/es-ES/Google-Developers-Group-Cordoba/events/255809930/'
 ---
 
-Tuvimos nuestros [Primer](https://twitter.com/met_CBA/status/1022867604837486598) y Segundo Encuentro MeT, donde nos presentamos, contamos nuestra visión, nuestros principios y ejes de trabajo. Propusimos a la nueva comunidad idear, de forma participativa, estrategias para avanzar en cada uno de los ejes. Trabajamos en equipos y construimos ideas geniales e innovadoras.
+LinkedIn, curriculums, entrevistas: salir al mundo empresarial y conseguir el trabajo perfecto para vos no es siempre fácil. Te están buscando, sólo tenés que lograr que te encuentren!
 
-El próximo *domingo 30 de septiembre*  les proponemos asistir juntas a la charla de la data scientist y lider de TopTal en Latinoamerica [Eva Bojorges](https://www.linkedin.com/in/eva-bojorges/): **Building an Empire: how to use data and game theory to make strategic decisions**. La charla se realiza en el marco de [PyData Córdoba](https://pydata.org/cordoba2018).
-
-Luego, las invitamos a debatir en el Almuerzo de Mujeres en Tecnología Córdoba sobre **cómo lograr eventos de tecnología más inclusivos**. Como siempre, nuestro espíritu es de generación de cambio, formación de vínculos que nos ayuden a crecer, y visibilización historias de mujeres y grupos sub-representados en tecnología para inspirar y tranformar nuestro entorno.
+Te invitamos a un panel y sesión práctica sobre cómo mostrar tu talento a empresas tech para conseguir tu primer trabajo. Invitamos a profesionales de empresas referentes de tecnología en Córdoba para que nos cuenten qué están buscando, por qué canales y cuáles son las mejores estrategias para comunicarles tu valor. Desde Mujeres en Tecnología, le sumamos una perspectiva distinta para charlar sobre cómo son percibidas las minorías y cómo nos afectan los sesgos inconscientes en los procesos de selección y los equipos de trabajo.
